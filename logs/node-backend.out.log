@@ -1,0 +1,7 @@
+
+> express-backend@1.0.0 start
+> node app.js
+
+Node.js backend server running on http://localhost:3000
+Connecting to Java backend at http://localhost:8080
+Health check: http://localhost:3000/health
