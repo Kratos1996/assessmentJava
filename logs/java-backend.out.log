@@ -29,7 +29,7 @@
 [INFO] 
 [INFO] --- spring-boot:2.7.18:run (default-cli) @ java-backend ---
 [INFO] Attaching agents: []
-13:18:06.837 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener - Restart disabled due to System property 'spring.devtools.restart.enabled' being set to false
+10:14:12.804 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener - Restart disabled due to System property 'spring.devtools.restart.enabled' being set to false
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -39,65 +39,132 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::               (v2.7.18)
 
-2026-06-04 13:18:07.087  INFO 19604 --- [           main] com.developer.test.Application           : Starting Application using Java 17 on Kratos with PID 19604 (C:\Users\ishan\OneDrive\Desktop\java_test\java-backend\target\classes started by ishan in C:\Users\ishan\OneDrive\Desktop\java_test\java-backend)
-2026-06-04 13:18:07.088  INFO 19604 --- [           main] com.developer.test.Application           : No active profile set, falling back to 1 default profile: "default"
-2026-06-04 13:18:07.121  INFO 19604 --- [           main] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-06-04 13:18:07.875  INFO 19604 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2026-06-04 13:18:07.879  INFO 19604 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-04 13:18:07.879  INFO 19604 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
-2026-06-04 13:18:07.971  INFO 19604 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-06-04 13:18:07.971  INFO 19604 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 850 ms
-2026-06-04 13:18:08.071  INFO 19604 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
-2026-06-04 13:18:08.188  INFO 19604 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2026-06-04 13:18:08.257  WARN 19604 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2026-06-04 13:18:08.261  INFO 19604 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/java_test?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC]
-2026-06-04 13:18:08.262  INFO 19604 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001001: Connection properties: {password=****, user=root}
-2026-06-04 13:18:08.262  INFO 19604 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001003: Autocommit mode: false
-2026-06-04 13:18:08.264  INFO 19604 --- [           main] .c.i.DriverManagerConnectionProviderImpl : HHH000115: Hibernate connection pool size: 20 (min=1)
-2026-06-04 13:18:08.386  INFO 19604 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2026-06-04 13:18:08.779  INFO 19604 --- [           main] org.hibernate.orm.connections.access     : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2ec5cc14] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2026-06-04 13:18:08.894  INFO 19604 --- [           main] com.developer.test.service.DataStore     : Using MySQL-backed datastore at jdbc:mysql://localhost:3306/java_test?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
-2026-06-04 13:18:09.147  INFO 19604 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2026-06-04 13:18:09.153  INFO 19604 --- [           main] com.developer.test.Application           : Started Application in 2.326 seconds (JVM running for 2.573)
-2026-06-04 13:18:09.759  INFO 19604 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-04 13:18:09.759  INFO 19604 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-04 13:18:09.760  INFO 19604 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-06-04 13:18:09.914  INFO 19604 --- [nio-8080-exec-1] c.d.test.filter.RequestLoggingFilter     : requestId=b147aa3b-f822-406b-8e9f-ebdc309cb8ed method=GET path=/health status=200 durationMs=153
-2026-06-04 13:18:10.008  INFO 19604 --- [nio-8080-exec-3] c.d.test.filter.RequestLoggingFilter     : requestId=48781e0f-c8c5-4c45-907e-26995153e585 method=GET path=/health status=200 durationMs=36
-2026-06-04 13:18:12.117  INFO 19604 --- [nio-8080-exec-4] c.d.test.filter.RequestLoggingFilter     : requestId=48322319-acc1-413c-8cdf-e17747ac9d1f method=GET path=/swagger-ui/index.html status=200 durationMs=13
-2026-06-04 13:18:12.356  INFO 19604 --- [nio-8080-exec-6] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 230 ms
-2026-06-04 13:18:12.359  INFO 19604 --- [nio-8080-exec-6] c.d.test.filter.RequestLoggingFilter     : requestId=956c911d-5603-43d3-8ae2-69c00b266f15 method=GET path=/v3/api-docs status=200 durationMs=246
-2026-06-04 13:18:12.406  INFO 19604 --- [nio-8080-exec-8] c.d.test.filter.RequestLoggingFilter     : requestId=546b4b4e-7cf2-4e22-9a36-f3abdf4ffb1c method=GET path=/health status=200 durationMs=33
-2026-06-04 13:18:12.435  INFO 19604 --- [io-8080-exec-10] c.d.test.filter.RequestLoggingFilter     : requestId=b19febfd-0ea5-4b7c-816a-bc53de4f298d method=GET path=/health status=200 durationMs=25
-2026-06-04 13:18:14.468  INFO 19604 --- [nio-8080-exec-1] c.d.test.filter.RequestLoggingFilter     : requestId=0b6c9f37-bb66-4102-a7c5-2d14cc307a55 method=GET path=/swagger-ui/index.html status=200 durationMs=1
-2026-06-04 13:18:14.484  INFO 19604 --- [nio-8080-exec-3] c.d.test.filter.RequestLoggingFilter     : requestId=6b137ecc-392a-43f3-8140-c1297ae30d44 method=GET path=/v3/api-docs status=200 durationMs=5
-2026-06-04 13:18:14.657  INFO 19604 --- [nio-8080-exec-4] c.d.test.filter.RequestLoggingFilter     : requestId=b86329a6-7fbe-4cc3-8243-5051cf1fae9f method=GET path=/swagger-ui/swagger-initializer.js status=200 durationMs=7
-2026-06-04 13:18:14.742  INFO 19604 --- [nio-8080-exec-5] c.d.test.filter.RequestLoggingFilter     : requestId=dff1b99e-99e3-48c8-a451-d54aa35e6329 method=GET path=/v3/api-docs/swagger-config status=200 durationMs=2
-2026-06-04 13:18:14.873  INFO 19604 --- [nio-8080-exec-6] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 95 ms
-2026-06-04 13:18:14.876  INFO 19604 --- [nio-8080-exec-6] c.d.test.filter.RequestLoggingFilter     : requestId=25cb56bb-ad1f-4bf5-b12d-6c7f3d72b0bc method=GET path=/v3/api-docs status=200 durationMs=100
-2026-06-04 13:18:15.049  INFO 19604 --- [nio-8080-exec-7] c.d.test.filter.RequestLoggingFilter     : requestId=b7d0553b-3422-425f-894a-7aa559bbf7aa method=GET path=/health status=200 durationMs=26
-2026-06-04 13:18:15.077  INFO 19604 --- [nio-8080-exec-8] c.d.test.filter.RequestLoggingFilter     : requestId=c259549d-b6e5-453f-9ebd-f4413ea63a8d method=GET path=/health status=200 durationMs=24
-2026-06-04 13:18:15.092  INFO 19604 --- [nio-8080-exec-9] c.d.test.filter.RequestLoggingFilter     : requestId=f9a459ad-24b7-4b36-8b9a-00a5297aeea4 method=GET path=/api/users status=200 durationMs=14
-2026-06-04 13:18:15.098  INFO 19604 --- [io-8080-exec-10] c.d.test.filter.RequestLoggingFilter     : requestId=251c601f-b27e-496a-b339-7f78216ed93e method=GET path=/api/tasks status=200 durationMs=20
-2026-06-04 13:18:15.099  INFO 19604 --- [nio-8080-exec-2] c.d.test.filter.RequestLoggingFilter     : requestId=899d8dac-db21-4189-bffe-8af9c89134b2 method=GET path=/api/users status=200 durationMs=3
-2026-06-04 13:18:15.105  INFO 19604 --- [nio-8080-exec-3] c.d.test.filter.RequestLoggingFilter     : requestId=9e28642b-6502-460d-9193-33a3bce91bda method=GET path=/api/tasks status=200 durationMs=4
-2026-06-04 13:18:15.110  INFO 19604 --- [nio-8080-exec-1] c.d.test.filter.RequestLoggingFilter     : requestId=5042229a-3567-435c-baaf-2ba0e67acf50 method=GET path=/api/stats status=200 durationMs=36
-2026-06-04 13:18:15.116  INFO 19604 --- [nio-8080-exec-4] c.d.test.filter.RequestLoggingFilter     : requestId=037ae1dc-1083-426d-9d01-cb147ab46a75 method=GET path=/api/stats status=200 durationMs=1
-2026-06-04 13:19:29.701  INFO 19604 --- [nio-8080-exec-2] c.d.test.filter.RequestLoggingFilter     : requestId=285ac5be-0fce-4250-b784-344720fa0483 method=GET path=/api/tasks?status=pending status=200 durationMs=9
-2026-06-04 13:19:30.562  INFO 19604 --- [nio-8080-exec-3] c.d.test.filter.RequestLoggingFilter     : requestId=1c45e5da-f8ca-4cd1-96c5-5d5ce7c016e4 method=GET path=/api/tasks?status=in-progress status=200 durationMs=4
-2026-06-04 13:19:31.255  INFO 19604 --- [nio-8080-exec-1] c.d.test.filter.RequestLoggingFilter     : requestId=295eb974-1abc-4394-8873-0fc166571f26 method=GET path=/api/tasks?status=completed status=200 durationMs=4
-2026-06-04 13:19:32.078  INFO 19604 --- [nio-8080-exec-4] c.d.test.filter.RequestLoggingFilter     : requestId=5c5081ed-996a-4e44-ad47-ab46aab4fcdb method=GET path=/api/tasks status=200 durationMs=4
-2026-06-04 13:19:33.668  INFO 19604 --- [nio-8080-exec-5] c.d.test.filter.RequestLoggingFilter     : requestId=d8b44593-fbc7-4608-8f98-deb5e4982621 method=GET path=/api/users/3 status=200 durationMs=4
-2026-06-04 13:19:33.677  INFO 19604 --- [nio-8080-exec-6] c.d.test.filter.RequestLoggingFilter     : requestId=c7de6bed-1eaf-4f5f-9af5-66ecb3914040 method=GET path=/api/tasks?userId=3 status=200 durationMs=4
-2026-06-04 13:19:35.716  INFO 19604 --- [nio-8080-exec-7] c.d.test.filter.RequestLoggingFilter     : requestId=ef8e37f2-ad04-4468-8fc2-4bafcd4f1d2c method=GET path=/api/users/2 status=200 durationMs=4
-2026-06-04 13:19:35.725  INFO 19604 --- [nio-8080-exec-8] c.d.test.filter.RequestLoggingFilter     : requestId=2b01862d-c35d-4913-9cd6-979c5b94e913 method=GET path=/api/tasks?userId=2 status=200 durationMs=4
-2026-06-04 13:19:37.109  INFO 19604 --- [nio-8080-exec-9] c.d.test.filter.RequestLoggingFilter     : requestId=4d963c1e-e90e-45f5-9259-f9dd9897c754 method=GET path=/api/users/1 status=200 durationMs=4
-2026-06-04 13:19:37.117  INFO 19604 --- [io-8080-exec-10] c.d.test.filter.RequestLoggingFilter     : requestId=343e373b-4363-40bc-a054-d2cbeca3c54e method=GET path=/api/tasks?userId=1 status=200 durationMs=4
-2026-06-04 13:19:39.270  INFO 19604 --- [nio-8080-exec-2] c.d.test.filter.RequestLoggingFilter     : requestId=fcd11d1a-b742-47c8-abd5-e303bd727f89 method=GET path=/health status=200 durationMs=35
-2026-06-04 13:19:39.279  INFO 19604 --- [nio-8080-exec-3] c.d.test.filter.RequestLoggingFilter     : requestId=7bc2c7cb-d23d-43dd-a3e7-2dd8e6f79d7e method=GET path=/api/users status=200 durationMs=4
-2026-06-04 13:19:39.286  INFO 19604 --- [nio-8080-exec-1] c.d.test.filter.RequestLoggingFilter     : requestId=700c7c4f-6cff-4f1d-9a69-4f6f3377836c method=GET path=/api/tasks status=200 durationMs=8
-2026-06-04 13:19:39.300  INFO 19604 --- [nio-8080-exec-4] c.d.test.filter.RequestLoggingFilter     : requestId=8e1e6d0c-c707-4ece-bf26-c5eec9a84cc7 method=GET path=/api/stats status=200 durationMs=23
-2026-06-04 13:19:40.675  INFO 19604 --- [nio-8080-exec-5] c.d.test.filter.RequestLoggingFilter     : requestId=026a90aa-2ddb-4be2-8a49-d743b873bda0 method=GET path=/health status=200 durationMs=32
-2026-06-04 13:19:40.680  INFO 19604 --- [nio-8080-exec-8] c.d.test.filter.RequestLoggingFilter     : requestId=2d08179b-100a-4f29-a945-d0827db096d3 method=GET path=/api/stats status=200 durationMs=0
-2026-06-04 13:19:40.683  INFO 19604 --- [nio-8080-exec-7] c.d.test.filter.RequestLoggingFilter     : requestId=362e5532-2bee-43d3-87eb-1a03dee6881d method=GET path=/api/tasks status=200 durationMs=3
-2026-06-04 13:19:40.683  INFO 19604 --- [nio-8080-exec-6] c.d.test.filter.RequestLoggingFilter     : requestId=7353755e-c3c8-4869-8fbe-9dfbdaaa1cf3 method=GET path=/api/users status=200 durationMs=4
+2026-06-06 10:14:13.044  INFO 22500 --- [           main] com.developer.test.Application           : Starting Application using Java 17 on Kratos with PID 22500 (C:\Users\ishan\OneDrive\Desktop\java_test\java-backend\target\classes started by ishan in C:\Users\ishan\OneDrive\Desktop\java_test\java-backend)
+2026-06-06 10:14:13.045  INFO 22500 --- [           main] com.developer.test.Application           : No active profile set, falling back to 1 default profile: "default"
+2026-06-06 10:14:13.064  INFO 22500 --- [           main] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-06 10:14:13.761  INFO 22500 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2026-06-06 10:14:13.767  INFO 22500 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-06 10:14:13.767  INFO 22500 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-06-06 10:14:13.854  INFO 22500 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-06 10:14:13.854  INFO 22500 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 790 ms
+2026-06-06 10:14:13.957  INFO 22500 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-06-06 10:14:14.075  INFO 22500 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-06-06 10:14:14.143  WARN 22500 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2026-06-06 10:14:14.146  INFO 22500 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/java_test?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC]
+2026-06-06 10:14:14.146  INFO 22500 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001001: Connection properties: {password=****, user=root}
+2026-06-06 10:14:14.146  INFO 22500 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001003: Autocommit mode: false
+2026-06-06 10:14:14.148  INFO 22500 --- [           main] .c.i.DriverManagerConnectionProviderImpl : HHH000115: Hibernate connection pool size: 20 (min=1)
+2026-06-06 10:14:14.668  INFO 22500 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2026-06-06 10:14:15.062  INFO 22500 --- [           main] org.hibernate.orm.connections.access     : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@177ddd24] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2026-06-06 10:14:15.213  INFO 22500 --- [           main] com.developer.test.service.DataStore     : Using MySQL-backed datastore at jdbc:mysql://localhost:3306/java_test?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+2026-06-06 10:14:15.439  INFO 22500 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2026-06-06 10:14:15.439  INFO 22500 --- [           main] com.developer.test.Application           : Started Application in 2.642 seconds (JVM running for 2.872)
+2026-06-06 10:14:15.897  INFO 22500 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-06 10:14:15.897  INFO 22500 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-06 10:14:15.904  INFO 22500 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-06-06 10:14:16.039  INFO 22500 --- [nio-8080-exec-1] c.d.test.filter.RequestLoggingFilter     : requestId=406d1585-d798-452d-9c9b-0dc1a317a514 method=GET path=/health status=200 durationMs=133
+2026-06-06 10:14:16.126  INFO 22500 --- [nio-8080-exec-3] c.d.test.filter.RequestLoggingFilter     : requestId=ebb73553-2d1c-498f-a2ad-a89c54f1e085 method=GET path=/health status=200 durationMs=34
+2026-06-06 10:14:18.221  INFO 22500 --- [nio-8080-exec-2] c.d.test.filter.RequestLoggingFilter     : requestId=4fc4124f-ec5d-499c-a33b-5f48dda450e5 method=GET path=/swagger-ui/index.html status=200 durationMs=13
+2026-06-06 10:14:18.447  INFO 22500 --- [nio-8080-exec-6] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 214 ms
+2026-06-06 10:14:18.462  INFO 22500 --- [nio-8080-exec-6] c.d.test.filter.RequestLoggingFilter     : requestId=d1ad0471-36b3-44aa-92a7-9125af827428 method=GET path=/v3/api-docs status=200 durationMs=241
+2026-06-06 10:14:18.508  INFO 22500 --- [nio-8080-exec-8] c.d.test.filter.RequestLoggingFilter     : requestId=5a6d5d71-0467-4c39-9d79-08d0eeeb515d method=GET path=/health status=200 durationMs=34
+2026-06-06 10:14:18.539  INFO 22500 --- [io-8080-exec-10] c.d.test.filter.RequestLoggingFilter     : requestId=87aa021b-1e1b-440a-92a6-e8f8255aaa53 method=GET path=/health status=200 durationMs=25
+2026-06-06 10:14:20.589  INFO 22500 --- [nio-8080-exec-1] c.d.test.filter.RequestLoggingFilter     : requestId=8e847a8f-0e65-4a3c-963f-310a356aed2c method=GET path=/swagger-ui/index.html status=200 durationMs=1
+2026-06-06 10:14:20.606  INFO 22500 --- [nio-8080-exec-3] c.d.test.filter.RequestLoggingFilter     : requestId=dbfcffaf-c852-4064-bb9f-7511ddf5d373 method=GET path=/v3/api-docs status=200 durationMs=5
+2026-06-06 10:14:21.304  INFO 22500 --- [nio-8080-exec-2] c.d.test.filter.RequestLoggingFilter     : requestId=43495abe-5c45-454e-b764-8b48c8376912 method=GET path=/swagger-ui/index.html status=304 durationMs=2
+2026-06-06 10:14:21.474  INFO 22500 --- [nio-8080-exec-6] c.d.test.filter.RequestLoggingFilter     : requestId=4a479f9d-ed21-4530-82f9-62ac6c5a9a51 method=GET path=/swagger-ui/swagger-ui.css status=304 durationMs=2
+2026-06-06 10:14:21.483  INFO 22500 --- [nio-8080-exec-8] c.d.test.filter.RequestLoggingFilter     : requestId=e19fa389-806d-4c10-9683-05f62cdfb5a1 method=GET path=/swagger-ui/swagger-ui-bundle.js status=304 durationMs=1
+2026-06-06 10:14:21.483  INFO 22500 --- [nio-8080-exec-7] c.d.test.filter.RequestLoggingFilter     : requestId=f01c7049-489c-4ba4-bfc0-9ffd2124ce16 method=GET path=/swagger-ui/index.css status=304 durationMs=1
+2026-06-06 10:14:21.552  INFO 22500 --- [nio-8080-exec-9] c.d.test.filter.RequestLoggingFilter     : requestId=0deb8e00-5fea-4230-a6b1-99121579e069 method=GET path=/swagger-ui/swagger-ui-standalone-preset.js status=304 durationMs=2
+2026-06-06 10:14:21.558  INFO 22500 --- [io-8080-exec-10] c.d.test.filter.RequestLoggingFilter     : requestId=1b1eb0c9-3e69-458f-b32b-004df7ca67d4 method=GET path=/swagger-ui/swagger-initializer.js status=200 durationMs=7
+2026-06-06 10:14:21.617  INFO 22500 --- [nio-8080-exec-1] c.d.test.filter.RequestLoggingFilter     : requestId=1e9fbd13-4df7-47d9-b9bf-babf41ae9e61 method=GET path=/v3/api-docs/swagger-config status=200 durationMs=1
+2026-06-06 10:14:21.774  INFO 22500 --- [nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 143 ms
+2026-06-06 10:14:21.777  INFO 22500 --- [nio-8080-exec-4] c.d.test.filter.RequestLoggingFilter     : requestId=80685da6-40a2-42bd-b200-fe4409b82769 method=GET path=/v3/api-docs status=200 durationMs=146
+2026-06-06 10:14:21.876  INFO 22500 --- [nio-8080-exec-3] c.d.test.filter.RequestLoggingFilter     : requestId=d4c87b5b-324a-46ba-8edc-c700b9713aa0 method=GET path=/health status=200 durationMs=38
+2026-06-06 10:14:21.905  INFO 22500 --- [nio-8080-exec-6] c.d.test.filter.RequestLoggingFilter     : requestId=3a3a78bf-37ef-442b-851a-96499547cf2c method=GET path=/api/tasks status=200 durationMs=19
+2026-06-06 10:14:21.918  INFO 22500 --- [nio-8080-exec-5] c.d.test.filter.RequestLoggingFilter     : requestId=e4e4e501-dde5-4c29-b47a-f795b5855ae8 method=GET path=/api/users status=200 durationMs=32
+2026-06-06 10:14:21.967  INFO 22500 --- [nio-8080-exec-2] c.d.test.filter.RequestLoggingFilter     : requestId=1884a83a-01e6-4106-b420-49a2016c5337 method=GET path=/health status=200 durationMs=86
+2026-06-06 10:14:21.972  INFO 22500 --- [nio-8080-exec-8] c.d.test.filter.RequestLoggingFilter     : requestId=3e0e3251-b093-4707-a747-23389e1b2a83 method=GET path=/api/stats status=200 durationMs=85
+2026-06-06 10:14:21.977  INFO 22500 --- [nio-8080-exec-7] c.d.test.filter.RequestLoggingFilter     : requestId=02d2babf-2452-45d3-a195-6fce4ed2ec86 method=GET path=/api/users status=200 durationMs=4
+2026-06-06 10:14:21.977  INFO 22500 --- [io-8080-exec-10] c.d.test.filter.RequestLoggingFilter     : requestId=b2399a1e-5a7f-411c-a167-4c11bddccb6d method=GET path=/api/stats status=200 durationMs=1
+2026-06-06 10:14:21.979  INFO 22500 --- [nio-8080-exec-9] c.d.test.filter.RequestLoggingFilter     : requestId=4974ebcf-1745-4a24-9bf9-4a5aba31bc7f method=GET path=/api/tasks status=200 durationMs=5
+2026-06-06 10:14:25.701  INFO 22500 --- [nio-8080-exec-3] c.d.test.filter.RequestLoggingFilter     : requestId=4403a720-0b69-43e3-9cc3-d7e4b1e68f46 method=GET path=/health status=200 durationMs=36
+2026-06-06 10:14:25.710  INFO 22500 --- [nio-8080-exec-2] c.d.test.filter.RequestLoggingFilter     : requestId=64e6a2a2-4b80-4bc6-a29a-83287ab43daa method=GET path=/api/stats status=200 durationMs=1
+2026-06-06 10:14:25.714  INFO 22500 --- [nio-8080-exec-6] c.d.test.filter.RequestLoggingFilter     : requestId=1b3f829a-2a23-466d-805b-0c37672bf0cb method=GET path=/api/users status=200 durationMs=6
+2026-06-06 10:14:25.715  INFO 22500 --- [nio-8080-exec-5] c.d.test.filter.RequestLoggingFilter     : requestId=6e633443-4808-4ede-a81b-621ce9d66903 method=GET path=/api/tasks status=200 durationMs=6
+2026-06-06 10:14:26.833  INFO 22500 --- [nio-8080-exec-8] c.d.test.filter.RequestLoggingFilter     : requestId=6c10a236-1244-4029-9bba-4fe98c92c296 method=GET path=/health status=200 durationMs=51
+2026-06-06 10:14:26.839  INFO 22500 --- [nio-8080-exec-9] c.d.test.filter.RequestLoggingFilter     : requestId=fed64bfd-b338-4fef-991e-b3378edc35c0 method=GET path=/api/stats status=200 durationMs=0
+2026-06-06 10:14:26.843  INFO 22500 --- [nio-8080-exec-7] c.d.test.filter.RequestLoggingFilter     : requestId=01fb85cb-8789-452d-95a9-86d37aa45e93 method=GET path=/api/users status=200 durationMs=4
+2026-06-06 10:14:26.843  INFO 22500 --- [io-8080-exec-10] c.d.test.filter.RequestLoggingFilter     : requestId=a08771ae-53a7-4b95-aa62-ebe5112e66e0 method=GET path=/api/tasks status=200 durationMs=5
+2026-06-06 10:14:27.760  INFO 22500 --- [nio-8080-exec-4] c.d.test.filter.RequestLoggingFilter     : requestId=c450ff7b-b229-4e37-b006-53cfaf14526b method=GET path=/health status=200 durationMs=43
+2026-06-06 10:14:27.774  INFO 22500 --- [nio-8080-exec-2] c.d.test.filter.RequestLoggingFilter     : requestId=dd32f05b-8e27-40db-8ca0-245bbb3c6a59 method=GET path=/api/tasks status=200 durationMs=10
+2026-06-06 10:14:27.774  INFO 22500 --- [nio-8080-exec-3] c.d.test.filter.RequestLoggingFilter     : requestId=e5d778d0-0755-4c99-96e2-eb269f63a1be method=GET path=/api/users status=200 durationMs=10
+2026-06-06 10:14:27.804  INFO 22500 --- [nio-8080-exec-6] c.d.test.filter.RequestLoggingFilter     : requestId=b25fd3c5-9ea6-466a-b918-effff4bde4ef method=GET path=/api/stats status=200 durationMs=39
+2026-06-06 10:14:28.807  INFO 22500 --- [nio-8080-exec-5] c.d.test.filter.RequestLoggingFilter     : requestId=b0e5e599-ea17-4ef0-906c-a20a9f2aed94 method=GET path=/health status=200 durationMs=37
+2026-06-06 10:14:28.813  INFO 22500 --- [nio-8080-exec-7] c.d.test.filter.RequestLoggingFilter     : requestId=29c49046-55ac-419a-9def-4bc3bee0587f method=GET path=/api/stats status=200 durationMs=0
+2026-06-06 10:14:28.816  INFO 22500 --- [nio-8080-exec-9] c.d.test.filter.RequestLoggingFilter     : requestId=a462f6e4-a1de-402c-b3ad-f5320ea310b9 method=GET path=/api/tasks status=200 durationMs=4
+2026-06-06 10:14:28.816  INFO 22500 --- [nio-8080-exec-8] c.d.test.filter.RequestLoggingFilter     : requestId=68b53988-6c75-4ea7-9087-97b53164b211 method=GET path=/api/users status=200 durationMs=5
+2026-06-06 10:14:29.495  INFO 22500 --- [io-8080-exec-10] c.d.test.filter.RequestLoggingFilter     : requestId=9ad18736-3ca9-4316-8de2-fd9c512983b3 method=GET path=/health status=200 durationMs=42
+2026-06-06 10:14:29.499  INFO 22500 --- [nio-8080-exec-2] c.d.test.filter.RequestLoggingFilter     : requestId=c7d93af5-c85f-4e5d-ab30-b981a756617c method=GET path=/api/stats status=200 durationMs=0
+2026-06-06 10:14:29.503  INFO 22500 --- [nio-8080-exec-1] c.d.test.filter.RequestLoggingFilter     : requestId=b70eac44-9681-45e8-8da1-b9465f329739 method=GET path=/api/users status=200 durationMs=3
+2026-06-06 10:14:29.503  INFO 22500 --- [nio-8080-exec-4] c.d.test.filter.RequestLoggingFilter     : requestId=b82a5f2e-f196-4ad6-9f37-ce649bd8dd50 method=GET path=/api/tasks status=200 durationMs=3
+2026-06-06 10:14:30.921  INFO 22500 --- [nio-8080-exec-3] c.d.test.filter.RequestLoggingFilter     : requestId=78299221-3de2-4353-8ea4-79d3b700d03c method=GET path=/health status=200 durationMs=40
+2026-06-06 10:14:30.926  INFO 22500 --- [nio-8080-exec-7] c.d.test.filter.RequestLoggingFilter     : requestId=d89e295d-3edd-4272-ae2f-d41ec08f1ce8 method=GET path=/api/stats status=200 durationMs=0
+2026-06-06 10:14:30.929  INFO 22500 --- [nio-8080-exec-6] c.d.test.filter.RequestLoggingFilter     : requestId=2552b96f-3540-442a-9b6e-cdef567c17e3 method=GET path=/api/users status=200 durationMs=3
+2026-06-06 10:14:30.929  INFO 22500 --- [nio-8080-exec-5] c.d.test.filter.RequestLoggingFilter     : requestId=25626bdc-12aa-48b6-9b5e-8b67d051b2f3 method=GET path=/api/tasks status=200 durationMs=3
+2026-06-06 10:14:31.872  INFO 22500 --- [nio-8080-exec-9] c.d.test.filter.RequestLoggingFilter     : requestId=67adbf6d-a41a-4cf8-b6d4-05756fe58019 method=GET path=/health status=200 durationMs=40
+2026-06-06 10:14:31.877  INFO 22500 --- [nio-8080-exec-2] c.d.test.filter.RequestLoggingFilter     : requestId=4f5f7056-cb3e-4200-ba8f-fe677755d97a method=GET path=/api/stats status=200 durationMs=0
+2026-06-06 10:14:31.879  INFO 22500 --- [nio-8080-exec-8] c.d.test.filter.RequestLoggingFilter     : requestId=ecc26aa3-a777-41c8-b620-c202a713edbd method=GET path=/api/users status=200 durationMs=3
+2026-06-06 10:14:31.879  INFO 22500 --- [io-8080-exec-10] c.d.test.filter.RequestLoggingFilter     : requestId=252f3b5c-bf3d-4452-89ee-930224313542 method=GET path=/api/tasks status=200 durationMs=3
+2026-06-06 10:14:32.023  INFO 22500 --- [nio-8080-exec-1] c.d.test.filter.RequestLoggingFilter     : requestId=586e95f8-fd72-4160-957f-fb213f646684 method=GET path=/health status=200 durationMs=29
+2026-06-06 10:14:32.028  INFO 22500 --- [nio-8080-exec-7] c.d.test.filter.RequestLoggingFilter     : requestId=79a57cb9-abba-4de4-9861-65affb15cf21 method=GET path=/api/stats status=200 durationMs=0
+2026-06-06 10:14:32.031  INFO 22500 --- [nio-8080-exec-4] c.d.test.filter.RequestLoggingFilter     : requestId=c5d24501-bac0-4d75-a121-3c05215befd4 method=GET path=/api/users status=200 durationMs=4
+2026-06-06 10:14:32.031  INFO 22500 --- [nio-8080-exec-3] c.d.test.filter.RequestLoggingFilter     : requestId=3d9c371d-bc34-41a0-bf2f-7557a9dd6349 method=GET path=/api/tasks status=200 durationMs=3
+2026-06-06 10:14:33.538  INFO 22500 --- [nio-8080-exec-6] c.d.test.filter.RequestLoggingFilter     : requestId=33ebeccd-7580-42cd-bea7-eefa85cfa1cd method=GET path=/health status=200 durationMs=42
+2026-06-06 10:14:33.546  INFO 22500 --- [nio-8080-exec-9] c.d.test.filter.RequestLoggingFilter     : requestId=28ac3cb5-09b1-4f30-9c12-d5cef4099350 method=GET path=/api/tasks status=200 durationMs=3
+2026-06-06 10:14:33.546  INFO 22500 --- [nio-8080-exec-5] c.d.test.filter.RequestLoggingFilter     : requestId=5c9ccf60-54cc-4ae4-ac27-d598907bb606 method=GET path=/api/users status=200 durationMs=3
+2026-06-06 10:14:33.567  INFO 22500 --- [nio-8080-exec-2] c.d.test.filter.RequestLoggingFilter     : requestId=b6ffd7c2-f0f2-49a6-888f-e5439363d3ac method=GET path=/api/stats status=200 durationMs=24
+2026-06-06 10:14:36.551  INFO 22500 --- [nio-8080-exec-8] c.d.test.filter.RequestLoggingFilter     : requestId=871364eb-b94e-4124-9164-d78ede2955bd method=GET path=/api/tasks?status=pending status=200 durationMs=9
+2026-06-06 10:14:37.419  INFO 22500 --- [io-8080-exec-10] c.d.test.filter.RequestLoggingFilter     : requestId=2666295c-4a0d-436e-8dff-40678e6de743 method=GET path=/api/tasks?status=in-progress status=200 durationMs=3
+2026-06-06 10:14:38.070  INFO 22500 --- [nio-8080-exec-1] c.d.test.filter.RequestLoggingFilter     : requestId=260ed3cc-5ed2-4667-8368-dd9d848a3757 method=GET path=/api/tasks?status=completed status=200 durationMs=4
+2026-06-06 10:14:39.286  INFO 22500 --- [nio-8080-exec-3] c.d.test.filter.RequestLoggingFilter     : requestId=9e0465e0-debc-4f51-b266-fc9625a6f30c method=GET path=/api/tasks status=200 durationMs=4
+2026-06-06 10:50:38.791  INFO 22500 --- [nio-8080-exec-9] c.d.test.filter.RequestLoggingFilter     : requestId=f7e91862-bbed-4199-9df8-1b153e47d391 method=GET path=/health status=200 durationMs=41
+2026-06-06 10:50:38.843  INFO 22500 --- [nio-8080-exec-5] c.d.test.filter.RequestLoggingFilter     : requestId=eadd8e01-6e30-4e6e-b2b1-db5041cdadb4 method=GET path=/health status=200 durationMs=47
+2026-06-06 10:50:38.866  INFO 22500 --- [nio-8080-exec-2] c.d.test.filter.RequestLoggingFilter     : requestId=a2d2ef60-8c66-465a-8220-2ad24816e8ba method=GET path=/api/users status=200 durationMs=6
+2026-06-06 10:50:38.882  INFO 22500 --- [nio-8080-exec-8] c.d.test.filter.RequestLoggingFilter     : requestId=5b591b91-72e7-4633-be80-b60c8941c7be method=GET path=/api/tasks status=200 durationMs=6
+2026-06-06 10:50:38.895  INFO 22500 --- [nio-8080-exec-7] c.d.test.filter.RequestLoggingFilter     : requestId=4ee65e88-3d7a-4775-8d06-f3a573886569 method=GET path=/api/tasks status=200 durationMs=8
+2026-06-06 10:50:38.900  INFO 22500 --- [nio-8080-exec-1] c.d.test.filter.RequestLoggingFilter     : requestId=1da0d9fd-9dfe-402d-81fe-cf379e2ed644 method=GET path=/api/users status=200 durationMs=15
+2026-06-06 10:50:38.947  INFO 22500 --- [io-8080-exec-10] c.d.test.filter.RequestLoggingFilter     : requestId=1ace4ad4-6373-41fa-9591-9081430113c7 method=GET path=/api/stats status=200 durationMs=70
+2026-06-06 10:50:38.952  INFO 22500 --- [nio-8080-exec-4] c.d.test.filter.RequestLoggingFilter     : requestId=94bb5458-d30a-4b26-a471-c4222a025e12 method=GET path=/api/stats status=200 durationMs=1
+2026-06-06 10:52:27.026  INFO 22500 --- [nio-8080-exec-5] c.d.test.filter.RequestLoggingFilter     : requestId=db355aff-4805-4351-82a9-551f141a07f9 method=GET path=/api/users/1 status=200 durationMs=9
+2026-06-06 10:52:27.037  INFO 22500 --- [nio-8080-exec-2] c.d.test.filter.RequestLoggingFilter     : requestId=d37621f0-ded6-4d8e-9b32-b55c92d6ac09 method=GET path=/api/tasks?userId=1 status=200 durationMs=6
+2026-06-06 10:52:37.204  INFO 22500 --- [nio-8080-exec-7] c.d.test.filter.RequestLoggingFilter     : requestId=f176e2e6-f0b5-472c-9c36-6a82543b42a7 method=GET path=/api/users/2 status=200 durationMs=4
+2026-06-06 10:52:37.216  INFO 22500 --- [nio-8080-exec-1] c.d.test.filter.RequestLoggingFilter     : requestId=17f4bb58-4128-4d4b-b166-79c74e815cae method=GET path=/api/tasks?userId=2 status=200 durationMs=6
+2026-06-06 10:56:06.444  INFO 22500 --- [nio-8080-exec-4] c.d.test.filter.RequestLoggingFilter     : requestId=9a4880cd-d6ef-482c-a422-b5c8ecdeb507 method=POST path=/api/auth/register status=201 durationMs=670
+2026-06-06 10:56:29.645  INFO 22500 --- [nio-8080-exec-6] c.d.test.filter.RequestLoggingFilter     : requestId=36884fbd-d197-463b-9399-35692411f821 method=GET path=/health status=200 durationMs=46
+2026-06-06 10:56:29.698  INFO 22500 --- [nio-8080-exec-3] c.d.test.filter.RequestLoggingFilter     : requestId=df42cec3-ce4c-49c3-a4d3-5203a5a3f58b method=GET path=/health status=200 durationMs=50
+2026-06-06 10:56:29.703  INFO 22500 --- [nio-8080-exec-9] c.d.test.filter.RequestLoggingFilter     : requestId=c452543e-0b35-4682-a968-1a9b1e4fc554 method=GET path=/api/users status=200 durationMs=6
+2026-06-06 10:56:29.714  INFO 22500 --- [nio-8080-exec-5] c.d.test.filter.RequestLoggingFilter     : requestId=399f0f09-97d5-4647-83cc-89956761cfc9 method=GET path=/api/tasks status=200 durationMs=9
+2026-06-06 10:56:29.759  INFO 22500 --- [nio-8080-exec-7] c.d.test.filter.RequestLoggingFilter     : requestId=9b82977e-24b9-49ef-9626-5973cbf5a3e4 method=GET path=/api/tasks status=200 durationMs=23
+2026-06-06 10:56:29.762  INFO 22500 --- [nio-8080-exec-8] c.d.test.filter.RequestLoggingFilter     : requestId=f05676e3-fd59-4a55-8022-12566ee0fdd0 method=GET path=/api/users status=200 durationMs=31
+2026-06-06 10:56:29.806  INFO 22500 --- [nio-8080-exec-2] c.d.test.filter.RequestLoggingFilter     : requestId=fa7740a2-ab8f-4470-be3d-ce5818686792 method=GET path=/api/stats status=200 durationMs=97
+2026-06-06 10:56:29.813  INFO 22500 --- [nio-8080-exec-1] c.d.test.filter.RequestLoggingFilter     : requestId=79cc8297-5486-4c87-a47d-c691b1b3996c method=GET path=/api/stats status=200 durationMs=1
+2026-06-06 10:56:34.997  INFO 22500 --- [nio-8080-exec-3] c.d.test.filter.RequestLoggingFilter     : requestId=5532deb2-b308-4b1f-8910-30ae2b994372 method=GET path=/api/users/4 status=200 durationMs=4
+2026-06-06 10:56:35.007  INFO 22500 --- [nio-8080-exec-9] c.d.test.filter.RequestLoggingFilter     : requestId=815fb5bd-e179-4d1f-9252-3ba581a04ccb method=GET path=/api/tasks?userId=4 status=200 durationMs=3
+2026-06-06 11:36:43.897  INFO 22500 --- [nio-8080-exec-8] c.d.test.filter.RequestLoggingFilter     : requestId=e727fc0d-0556-48a6-a2eb-9c05c6543d47 method=GET path=/health status=200 durationMs=38
+2026-06-06 11:36:43.907  INFO 22500 --- [nio-8080-exec-2] c.d.test.filter.RequestLoggingFilter     : requestId=f6bba005-56d6-4198-93d1-45e77f60e43e method=GET path=/api/users status=200 durationMs=4
+2026-06-06 11:36:43.923  INFO 22500 --- [nio-8080-exec-1] c.d.test.filter.RequestLoggingFilter     : requestId=5f5828c5-2e96-4ee3-8d37-f25c4cd432de method=GET path=/api/tasks status=200 durationMs=18
+2026-06-06 11:36:43.933  INFO 22500 --- [io-8080-exec-10] c.d.test.filter.RequestLoggingFilter     : requestId=461d6e55-ef95-4fc2-9179-1657dfce35e7 method=GET path=/api/stats status=200 durationMs=28
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  04:45 h
+[INFO] Finished at: 2026-06-06T14:59:14+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.7.18:run (default-cli) on project java-backend: Application finished with exit code: -1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

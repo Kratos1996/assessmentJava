@@ -7,8 +7,8 @@ const { errorHandler, notFoundHandler } = require('./middleware/errorHandler');
 const app = express();
 
 // Middleware
-app.use(cors());
-app.use(express.json());
+app.use(cors()); // Enable CORS for all routes not allowed other domains to access the API
+app.use(express.json()); // Parse JSON request bodies
 
 // Routes
 app.use(routes);

@@ -1,0 +1,35 @@
+{
+  "name": "express-backend",
+  "version": "1.0.0",
+  "description": "Express.js backend proxy for Java API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "api",
+    "proxy"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.13.5", // For making HTTP requests to the Java API
+    "cookie-parser": "^1.4.6", // For parsing cookies in Express
+    "cors": "^2.8.5", // For enabling Cross origins resource sharing
+    "dotenv": "^16.3.1", // For loading environment variables from a .env file
+    "express": "^4.18.2", // The Express.js framework for building the backend
+    "jsonwebtoken": "^9.0.1", // For handling JSON Web Tokens (JWT) for authentication
+    "moment": "^2.29.4", // For date manipulation and formatting
+    "mongoose": "^7.4.1", // For MongoDB object modeling and database interactions
+    "multer": "^1.4.5-lts.2", // For handling file uploads in Express
+    "nodemailer": "^6.9.7", // For sending emails from the backend
+    "otp-generator": "^4.0.1", // For generating one-time passwords (OTPs) for authentication or verification,
+    "validator": "^13.15.0" // For validating and sanitizing user input
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1" // For automatically restarting the server during development when file changes are detected
+  }
+}
